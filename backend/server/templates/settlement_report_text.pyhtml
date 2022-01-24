@@ -1,0 +1,12 @@
+<?py #@ARGS payments ?>
+<?py _context['_layout'] = 'base_email.pyhtml' ?>
+
+                                      
+                                              <?py for payment in payments: ?>
+                                                <tr>
+                                                  <td style="padding: 0 0 0 30px;">${payment['paymentReferenceId']}</td>
+                                                  <td style="padding: 0 15px;">${payment['customerName']}</td>
+                                                  <td style="padding: 0 0 0 15px;">${payment['billBase'][0]} ${payment['billBase'][1]}</td>
+                                                  <td style="padding: 0 0 0 15px;">${payment['createdAt']}</td>
+                                                </tr>
+                                              <?py #endfor ?>

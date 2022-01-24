@@ -1,0 +1,2 @@
+<?py #@ARGS sender_name, invite_url, days_before_expiration ?>
+<?py _context['_layout'] = 'base_email_text.pyhtml' ?>

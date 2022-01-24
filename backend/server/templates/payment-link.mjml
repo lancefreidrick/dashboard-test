@@ -1,0 +1,128 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-wrapper
+        background-color="#FFFFFF"
+        border-radius="15px"
+      />
+      <mj-section
+        padding="20px"
+      />
+      <mj-text
+        font-family="Calibri, sans-serif;"
+        color="#595959"
+        line-height="23px"
+      />
+      <mj-divider
+        border-width="1px"
+        border-style="solid"
+        border-color="#D9D9D9"
+      />
+      <mj-image
+        width="120px"
+        align="left"
+      />
+      <mj-button
+        border-radius="100px"
+        background-color="#36D1DC"
+        color="white"
+        height="36px"
+        inner-padding="16px 60px"
+        font-size="14px"
+        font-weight="bold"
+      />
+      <mj-class name="title" font-size="16px" />
+      <mj-class name="label" font-weight="bold" />
+      <mj-class name="footer" color="#BFBFBF" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#36D1D6">
+    <mj-section padding="25px 0" />
+    <mj-wrapper>
+      <mj-section>
+        <mj-column>
+          <mj-image
+            src="https://s3-ap-southeast-1.amazonaws.com/qwikwire-static-assets/public/aqwire-logo.png"
+          />
+          <mj-text>
+            <p>Payment Link for ${merchant_name}</p>
+            <p>Payment Reference ID: ${transaction_id}</p>
+          </mj-text>
+          <mj-divider />
+          <mj-text mj-class="title">
+            ${merchant_name} has sent you a payment link.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="0 45px">
+        <mj-column
+          background-color="#F7F9FC"
+          border-radius="10px"
+        >
+          <mj-table
+            padding-left="10px"
+            padding-right="10px"
+            cellpadding="5px"
+          >
+            <tr>
+              <td style="font-weight: bold;">Customer Name:</td>
+              <td style="text-align: right;">${customer_name}</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold;">Project:</td>
+              <td style="text-align: right;">${project_name}</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold;">Payment Type:</td>
+              <td style="text-align: right;">${payment_type}</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold;">Notes:</td>
+              <td style="text-align: right;">${client_notes}</td>
+            </tr>
+            <tr>
+              <td style="font-weight: bold;">Amount Due:</tde>
+              <td style="text-align: right;">${amount_currency} ${amount_due}</td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column>
+          <mj-button href=${payment_link}>Pay Now</mj-button>
+          <mj-text>
+            <p>If the button above does not work, please click the link below:</p>
+            <a href=${payment_link}>${payment_link}</a>
+          </mj-text>
+          <mj-text padding-top="20px">
+            <p style="white-space: pre-line;">The contents of this email is only intended for the recipient for the purpose of payment link for ${merchant_name} via AQWIRE.
+            Please do not share this link to others.</p>
+          </mj-text>
+          <mj-divider />
+          <mj-text font-size="16px" padding="25px 25px 15px">
+            Need Help?
+          </mj-text>
+          <mj-text padding-bottom="25px">
+            <span>Contact</span>
+            <a href=mailto:${support_email}>${support_email}
+          </mj-text>
+          <mj-divider />
+          <mj-text mj-class="footer">
+            <p style="white-space: pre-line;">This is a system-generated email notification.
+
+            For questions and other concerns, please drop us an email at <a href=mailto:${support_email}>${support_email}</a>
+            or call us directly at PH: (02) 772-8878 | US: +1 408-914-2488
+            </p>
+          </mj-text>
+          <mj-image
+            src="https://cdn.aqwire.io/portal/v3/email/aqwire-logo-white.png"
+          />
+          <mj-text mj-class="footer" padding="20px 25px 0">
+            Copyright © ${copyright_year} AQWIRE PTE. LTD. All rights reserved
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+    <mj-section padding="25px 0" />
+  </mj-body>
+</mjml>

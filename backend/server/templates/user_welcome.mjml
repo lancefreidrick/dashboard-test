@@ -1,0 +1,264 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-all font-family="Sailec, Arial, san-serif;" padding="0px" />
+      <mj-divider border-width="1px" border-style="solid" padding="0px 20px" border-color="lightgrey" />
+      <mj-class name="header-text" font-size="20px" line-height="28px" color="#36d1dc" align="center" font-weight="bold" />
+      <mj-class name="full-button" font-size="12px" line-height="20px" color="#ffffff" background-color="#36d1dc" width="100%" padding-right="24px" />
+      <mj-class name="login-button" font-size="12px" line-height="20px" color="#36d1dc" background-color="#ffffff" width="180px" text-align="center" />
+      <mj-button border-radius="100px" color="#36d1dc" background-color="#ffffff" height="32px" width="148px" line-height="22px" padding-left="48px" padding-top="32px" font-size="14px" />
+    </mj-attributes>
+    <mj-style inline="inline">
+      .welcome-text div {
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+      font-size: 14px !important;
+      line-height: 22px !important;
+      padding-top: 16px !important;
+      color: #ffffff;
+      text-align: center !important;
+      }
+
+      .welcome-group {
+      display: inline-block !important;
+      border-radius: 10px;
+      height: 100%;
+      }
+
+      .welcome-text-column {
+      width: 100% !important;
+      }
+
+      .welcome-image-column {
+      display: none !important;
+      width: 100% !important;
+      max-width: 100%;
+      }
+
+      .login-button {
+      padding-left: 0px !important;
+      padding-bottom: 24px !important;
+      }
+
+      .login-button a {
+      border-radius: 100px;
+      text-align: center;
+      padding-top: 32px;
+      font-size: 14px !important;
+      }
+
+      .welcome-text-strong div {
+      font-size: 38px !important;
+      font-weight: bold !important;
+      padding-top: 16px !important;
+      line-height: 46px !important;
+      color: #ffffff !important;
+      text-align: center !important;
+      }
+
+      .welcome-text-name div {
+      font-size: 20px !important;
+      font-weight: bold !important;
+      padding-top: 16px !important;
+      line-height: 28px !important;
+      color: #ffffff !important;
+      text-align: center !important;
+      }
+
+      .image-description {
+      vertical-align: middle;
+      }
+
+      .text-small div {
+      padding-bottom: 16px !important;
+      font-size: 12px !important;
+      line-height: 20px !important;
+      color: #595959 !important;
+      text-align: center !important;
+      }
+
+      .header-text-small div {
+      font-size: 16px !important;
+      line-height: 24px !important;
+      color: #36d1dc !important;
+      font-weight: bold !important;
+      text-align: center !important;
+      }
+
+      .mj-section-preview > table > tbody > tr > td:first-child {
+      padding: 24px !important;
+      }
+
+      .full-button {
+      width: 100% !important;
+      padding-left: 24px !important;
+      }
+
+      .welcome-text-column img {
+      width: 70% !important;
+      text-align: center !important;
+      margin: auto !important;
+      padding-top: 32px !important;
+      padding-bottom: 20px !important;
+      }
+    </mj-style>
+    <mj-style>
+      @media only screen and (min-width: 768px) {
+      .text-small div {
+      text-align: left !important;
+      }
+
+      .header-text-small div {
+      text-align: left !important;
+      }
+
+      .welcome-text div {
+      padding-left: 48px !important;
+      font-size: 14px !important;
+      line-height: 22px !important;
+      padding-top: 16px !important;
+      color: #ffffff;
+      text-align: left !important;
+      }
+
+      .login-button {
+      float: left;
+      padding-left: 48px !important;
+      padding-bottom: 24px !important;
+      }
+
+      .welcome-group {
+      display: inline-block !important;
+      border-radius: 10px !important;
+      height: 490px !important;
+      }
+
+      .welcome-text-column {
+      width: 41% !important;
+      }
+
+      .welcome-text-column img {
+      padding-left: 50px !important;
+      width: 132px !important;
+      padding-bottom: 0px !important;
+      margin: 0 !important;
+      }
+
+      .welcome-text-strong div {
+      font-size: 30px !important;
+      font-weight: bold !important;
+      padding-top: 8px !important;
+      line-height: 38px !important;
+      padding-left: 48px !important;
+      color: #ffffff !important;
+      text-align: left !important;
+      }
+
+      .welcome-text-name div {
+      font-size: 24px !important;
+      font-weight: bold !important;
+      padding-top: 32px !important;
+      line-height: 32px !important;
+      padding-left: 48px !important;
+      color: #ffffff !important;
+      text-align: left !important;
+      }
+
+      .welcome-image-column {
+      display: block !important;
+      width: 50% !important;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+      border-radius: 10px !important;
+      float: right !important;
+      }
+
+      .welcome-image-column > table > tbody > tr > td:first-child {
+      padding: 0px !important;
+      }
+
+      .mj-section-preview > table > tbody > tr > td:first-child {
+      padding: 48px !important;
+      }
+
+      .full-button {
+      width: 100% !important;
+      padding-left: 48px !important;
+      }
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="white" width="800px">
+    <mj-section background-color="#ffffff" border-radius="10px" padding="24px" css-class="mj-section-top">
+      <mj-group background-color="#36d1dc" css-class="welcome-group">
+        <mj-column css-class="welcome-image-column">
+          <mj-image src="https://s3.ap-southeast-1.amazonaws.com/cdn.aqwire.io/dashboard/user_welcome_laptop.png"></mj-image>
+        </mj-column>
+        <mj-column css-class="welcome-text-column">
+          <mj-image src="https://s3.ap-southeast-1.amazonaws.com/cdn.aqwire.io/dashboard/aqwire_logo_white_4x.png"></mj-image>
+          <mj-text css-class="welcome-text-name">Hi, ${recipient_name}!</mj-text>
+          <mj-text css-class="welcome-text-strong">Meet your Dashboard</mj-text>
+          <mj-text css-class="welcome-text" color="#ffffff">Managing your transactions is now easier with AQWIRE Dashboard. Get real-time access to reports, generate one-time payment links,
+            and manage auto-debit enrollments in one
+            single dashboard.</mj-text>
+          <mj-button href=${login_url} css-class="login-button" mj-class="login-button">
+            <mj-text>Open dashboard</mj-text>
+          </mj-button>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section padding="48px" css-class="mj-section-preview">
+      <mj-column>
+        <mj-image src="https://s3.ap-southeast-1.amazonaws.com/cdn.aqwire.io/dashboard/create_payment_links.png"></mj-image>
+      </mj-column>
+      <mj-column vertical-align="middle">
+        <mj-text padding-left="16px" padding-top="32px" css-class="header-text-small">
+          Create Payment Links
+        </mj-text>
+        <mj-text padding-left="16px" mj-class="text-small" css-class="text-small">
+          Generate one-time payment links per individual customer for any type of payment.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+
+    <mj-section padding="48px" css-class="mj-section-preview">
+      <mj-column>
+        <mj-image src="https://s3.ap-southeast-1.amazonaws.com/cdn.aqwire.io/dashboard/monitor_payments_transactions.png"></mj-image>
+      </mj-column>
+      <mj-column vertical-align="middle">
+        <mj-text padding-left="16px" padding-top="32px" css-class="header-text-small">
+          Monitor your Payments and
+          Recurring Transactions
+        </mj-text>
+        <mj-text padding-left="16px" mj-class="text-small" css-class="text-small">
+          View and manage all payment transactions in full details. See your customer's information, payment status, and more.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="48px" css-class="mj-section-preview">
+      <mj-column>
+        <mj-image src="https://s3.ap-southeast-1.amazonaws.com/cdn.aqwire.io/dashboard/settlement_reports.png"></mj-image>
+      </mj-column>
+      <mj-column vertical-align="middle">
+        <mj-text padding-left="16px" padding-top="32px" css-class="header-text-small">
+          Settlement Reports
+        </mj-text>
+        <mj-text padding-left="16px" mj-class="text-small" css-class="text-small">
+          Get access to analytics reports and track your growth
+          in real-time.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding-bottom="64px">
+      <mj-column>
+        <mj-button mj-class="full-button" css-class="full-button" href=${login_url} mj-class="login-button">
+          <mj-text>Get Started</mj-text>
+        </mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
